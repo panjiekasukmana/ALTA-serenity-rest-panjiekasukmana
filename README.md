@@ -1,5 +1,5 @@
 <div align="center">
- API Automation On JSONplaceHolder
+ API Automation On Reqres.in
   <p align="center">
     Program Immersive Alterra Academy
     <br />
@@ -11,7 +11,7 @@
 
 ## 📑 About the Project
 
-<p align="justify">JSONPlaceholder is a free online REST API that you can use whenever you need some fake data.</p>
+<p align="justify">reqres.in is a free online REST API that you can use whenever you need some fake data.</p>
 
 ## 🛠 Tools
 **Manual:**
