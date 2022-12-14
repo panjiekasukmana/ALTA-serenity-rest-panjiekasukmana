@@ -1,6 +1,6 @@
 Feature: reqres feature
 
-  @Tugas
+  @Positive
   Scenario Outline: Delete user with valid data
     Given Delete user with valid id <id>
     When Send request delete user
@@ -10,7 +10,7 @@ Feature: reqres feature
       |1 |
       |2 |
 
-  @Tugas
+  @Positive
   Scenario Outline: Delete user with invalid data
     Given Delete user with invalid id <id>
     When Send request delete user

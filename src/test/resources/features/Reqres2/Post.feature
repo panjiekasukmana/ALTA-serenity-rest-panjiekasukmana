@@ -1,6 +1,6 @@
 Feature: reqres feature
 
-  @Latihan
+  @Positive
   Scenario: Post create new user with valid json
     Given Post create new user
     When Send request post create new user
@@ -8,42 +8,42 @@ Feature: reqres feature
     And Response body should contain name "Panji Eka" and job "Junior QA"
     And Create new user schema validator
 
-  @Tugas #Negative
+  @Negative
   Scenario: Post create new user with invalid json
     Given Post create new user without job
     When Send request post create new user
     Then Should return 400 bad request
     And Create invalid user schema validator
 
-  @Tugas #Positive
+  @Positive
   Scenario: Post register with valid email
     Given Post register with email
     When Send request post register
     Then Should return should be 200 OK
     And Register valid email schema validator
 
-  @Tugas #Negative #Bug
+  @Negative #Bug
   Scenario: Post register with invalid email
     Given Post register without email
     When Send request post register without email
     Then Should return should be 400 bad request
     And Register without email schema validator
 
-  @Tugas #Negative
+  @Negative
   Scenario: Post register with invalid email
     Given Post register without password
     When Send request post register without password
     Then Should return should be 400 bad request
     And Register without password schema validator
 
-  @Tugas #Positive
+  @Positive
   Scenario: Post login with valid email
     Given Post login with email
     When Send request login
     Then Status code 200 ok
     And Login with valid email  schema validator
 
-  @Tugas #Bermasalah
+  @Negative
   Scenario: Post login without password
     Given Post login without password
     When Send request login without password

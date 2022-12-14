@@ -1,6 +1,6 @@
 Feature: reqres feature
 
-  @Tugas
+  @Positive
   Scenario Outline: Patch update user with valid json
     Given Patch update user <id>
     When Send request patch update user id
@@ -13,7 +13,7 @@ Feature: reqres feature
       |2 |
 
 
-  @Tugas
+  @Negative
   Scenario Outline: Patch update user with invalid json
     Given Patch update user without job <id>
     When Send request patch update user id invalid json

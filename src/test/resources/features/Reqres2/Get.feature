@@ -1,5 +1,5 @@
 Feature: Features to test Reqres
-  @Latihan
+  @Positive
   Scenario Outline: Get list user with parameter
     Given Get list user with parameter page <page>
     When Send request get list user
@@ -11,7 +11,7 @@ Feature: Features to test Reqres
       |1   |
       |2   |
 
-  @Tugas
+  @Negative
   Scenario Outline: Get list user with invalid parameter
     Given Get list user with parameter page <page>
     When Send request get list user with invalid parameter
@@ -22,7 +22,7 @@ Feature: Features to test Reqres
       |8000   |
       |9000   |
 
-  @Tugas
+  @Positive
   Scenario Outline: Get single user
     Given Get single user with id <id>
     When Send request get single user
@@ -34,7 +34,7 @@ Feature: Features to test Reqres
       |1 |
       |2 |
 
-  @Tugas
+  @Positive
   Scenario Outline: Get single list resource valid parameter
     Given Get single list resource <id>
     When Send request get list resource
@@ -46,7 +46,7 @@ Feature: Features to test Reqres
       |2 |
       |3 |
 
-  @Tugas
+  @Negative
   Scenario Outline: Get single list resource invalid parameter
     Given Get single list resource <id>
     When Send request get list resource

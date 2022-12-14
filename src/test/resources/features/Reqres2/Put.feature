@@ -1,6 +1,6 @@
 Feature: reqres feature
 
-  @Latihan
+  @Positive
   Scenario Outline: Put update user with valid json
     Given Put update user id <id>
     When Send request put update user id
@@ -13,7 +13,7 @@ Feature: reqres feature
       |2 |
 
 
-  @Tugas
+  @Negative
   Scenario Outline: Put update user with invalid json
     Given Put update user invalid json <id>
     When Send request put update user id invalid json
